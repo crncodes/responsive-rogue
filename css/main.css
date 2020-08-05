@@ -1,0 +1,248 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1em;
+}
+
+.container{
+	max-width: 1200px;
+	width:90%;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+	font-size: 1.1253m;
+}
+h4 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 21px;
+  padding: 0 0px;
+}
+
+/*The widths are in a percentage!*/
+header {
+	height: auto;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-flow: wrap;
+}
+
+header h1 {
+	margin: 0;
+	padding: 25px 0;
+	width: 100%;
+	border-bottom: 5px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	padding: 25px 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: wrap;
+	width: 100%;
+	margin: 0 auto;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.main-image {
+	height: auto;
+}
+
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+}
+
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 21px;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 24px;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	height: auto;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	text-align: center;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+/* Tablet CSS*/
+@media all and (min-width:768px) {
+
+	.bottom-section {
+		display: flex;
+  	justify-content: center;
+  	align-items: baseline;
+  	flex-flow: row nowrap;
+  	flex-basis: auto;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		border-top: 1px solid #eee;
+	}
+
+	.section-two,
+	.section-three {
+		padding-left: 15px;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+}
+
+/* Desktop CSS */
+@media all and (min-width:1200px) {
+
+	header {
+    display: flex;
+    flex-flow: row nowrap;
+	}
+
+	header h1 {
+    width: 50%;
+    border-bottom: none;
+    justify-content: flex-start;
+    display: flex;
+	}
+
+	header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    flex-wrap: nowrap;
+    align-items: center;
+	}
+
+	header nav ul {
+    display: flex;
+    justify-content: space-between;
+	}
+
+	header nav ul li {
+		padding: 10px;
+		}
